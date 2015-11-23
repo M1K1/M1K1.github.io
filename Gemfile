@@ -1,7 +1,8 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll", "~> 2.4.0"
-gem "rdiscount", "~> 2.1.7"
-gem "pygments.rb", "~> 0.6.3"
-gem "github-pages", "~> 39"
-gem "rake", "~> 10.1.1"
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+gem 'github-pages', versions['github-pages']
+gem 'rake'

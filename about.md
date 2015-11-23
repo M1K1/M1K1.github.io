@@ -1,14 +1,24 @@
 ---
 layout: page
-title: About
-class: 'post'
-navigation: True
-logo: 'assets/images/ghost.png'
-current: about
+title: About me
+permalink: /about/
+banner_image: sample-banner-image-2.jpg
+banner_image_alt: About me
 ---
 
-This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
+Hi, I am Tom Warlker. I am a professional UI/UX designrer and web developer. I love being minimal and creative.
 
-We use this for testing and for reference!
+I prefer to serve with Php and Ruby based stacks and also love to work 
+on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
 
-If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign up.
+### Contact me
+
+Say `Hello` at gayanvirajith@gmail.com or find
+me on
+
+---
+
+{% include social.html %}
+
+[pw]: http://processwire.com
+[jekyll]: http://jekyllrb.com

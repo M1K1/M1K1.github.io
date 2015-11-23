@@ -1,95 +1,132 @@
-## Jasper
+# Gaya Jekyll Theme
 
-[![Build Status](https://travis-ci.org/biomadeira/jasper.svg?branch=master)](https://travis-ci.org/biomadeira/jasper)
+Modern responsive theme made for jekyll blogging platform. 
+Gaya is a simple theme build from ground up with the focus of performance. 
+The theme itself quickly adapts to the users device, so it looks great on 
+smartphones, tablets, desktops or even the large monitors.
 
-This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper). 
+- Ability to change theme color at any time with any color.
+- Easy customizable menu navigation.
+- SEO Friendly
+- Embed image, YouTube/Vimeo video or SoundCloud audio to your post.
 
-You might well ask at this point why bother making a new Casper's clone? 
-Although this is inspired by Kasper, there are several **additional** features which make this port closer 
-to the original theme. Besides, I have recently updated it to match the current version of the theme.
+---
 
+![Theme preview](http://gayan.me/thumbnails/gaya-jekyll-theme-preview-590x300.png "Gaya jekyll theme")
 
-## Live demo
+### Need Help?
 
-[Jasper Live Demo](https://biomadeira.github.io/jasper)
+Please submit as an 
+[issue](https://github.com/web-create/harmony/issues/new), I am happy 
+to response back.
 
-[Casper's Original Here](https://demo.ghost.io)
+## How to install/run
 
+1. [Fork](https://github.com/gayanvirajith/gaya) this repository.
+2. Clone it: git clone https://github.com/YOUR-USERNAME/gaya.
+3. If you completely new to jekyll, please read more about [Jekyll](http://jekyllrb.com/) and [Github pages](https://help.github.com/articles/using-jekyll-with-pages).
+4. Change your directory into cloned repository. 
+5. Run `bundle install`
+6. Edit the _config.yml on root directory. Change `url` property to to 
+`http://127.0.0.1:4000` since you are going to run on localhost.
+7. Run the jekyll server by having: `bundle exec jekyll serve --baseurl ''` or `rake preview`   
 
-## Screenshots
+Try to locate your browser at [http://localhost:4000](http://localhost:4000).
 
-**Home page**
-![home page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen1.png)
-
-**Post page**
-![post page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen2.png)
-
-**Author page**
-![author page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen3.png)
-
-**Related posts page**
-![tag page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen4.png)
-
-**Tags page with opened sidebar**
-![sidebar page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen5.png)
-
-**404 page**
-![related page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen6.png)
-
-## Jasper theme includes
-
-* Pagination
-* Author page **(New 07.02.2015)**
-* Tag page(s) **(New 07.02.2015)**
-* 404 page **(New 07.02.2015)**
-* Toggleable sliding sidebar **(New 07.02.2015)**
-* Related posts view **(New 30.10.2015)**
-* Tag description(s) **(New 30.10.2015)**
-* Rss
-* Google Analytics tracking
-* Code Syntax Highlight
-* Author's profile with picture
-* Disqus comments (not Ghost standard)
-
-## How to use it
-
-### Deployment
-
-**Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means:
-
-**1)** that we need to generate your site locally (more details below) and push the resulting HTML to a Github repository;
-
-**2)** built the site with [travis-ci](https://travis-ci.org/) (with goodies from [jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the generated *_site/* files to your *gh-pages* branch.
- This later approach is the one I am currently using to generate the live demo.
-
-For option **1)** simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting *_site/* contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (as for the [demo](https://github.com/biomadeira/jasper/tree/gh-pages)).
-
-For option **2)** you will need to set up travis-ci for your personal fork. Briefly all you need then is to change your details in *[\_config.yml](_config.yml)* so that you can push to your github repo. You will also need to generate a secure key to add to your *[.travis.yml](.travis.yml)* (you can find more info on how to do it in that file). Also make sure you read the documentation from [jekyll-travis](https://github.com/mfenner/jekyll-travis). This approach has clear advantages in that you simply push changes to your files and all the html files are generated for you. Also you get to know if everything is still fine with your site builds. Don't hesitate to contact me if you still have any issues (see below about issue tracking).
-
-### Author pages
-
-As discussed [here](https://github.com/biomadeira/jasper/issues/3), in order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your *username* as defined in the *[\_config.yml](_config.yml)* file.
-This probably means that with a bit of hacking you could in principle generate multiple author blogs...
-
-## Issues and contributing 
-
-This install builds well with Ruby v2.1.1 and Jekyll v3.0.0. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
-
-Feel free pull-request your patches and fixes.
-
-## Thanks 
-
-All the design work has been already done by the Ghost team. Many thanks to them :smile:
+Note: If you are a windows user please refer this nice website - http://jekyll-windows.juthilo.com/ by Julian Thilo to configure ruby + jekyll on windows.
 
 
-## Copyright & License
+## Theme options and configurations
 
-Copyright (C) 2015 - Released under the MIT License.
+Following options can be seen within the file `_config.yml`. More information 
+about configuration can be found on the [Jekyll Documentationn][jekyll]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+### General settings
+
+| Property name | Description  |
+------------ | -------------
+`title` | The title of your blog shown in the site header along with the logo.
+`tagline` | The site tagline also shown in the site header along with the title.
+`email` | The email address associated with blog/site.
+`description` | The site description used to show author's/site's description in the top of the sidebar.
+`baseurl` | The subpath of your site, e.g. /blog/. More information can be found in the [Jekyll Documentationn][jekyll].
+`url` | The base host name & protocol for your site. More information can be found in the [Jekyll Documentationn][jekyll].
+`logourl` | Path to main logo image.
+`author_thumbnail` | Path to author's thumbnail image. 
+`author` | Name of the author.
+`paginate` | Number of posts to show per page, More information can be found in the [Jekyll Documentationn][jekyll].
+
+### Social profile links
+
+| Property name | Description  |
+------------ | -------------
+`github` | GitHub link (Leave empty to exclude)
+`twitter` | Twitter link (Leave empty to exclude)
+`facebook` | Facebook link (Leave empty to exclude)
+`gplus` | Google plus link (Leave empty to exclude)
+`dribble` | Dribble link (Leave empty to exclude)
+`pinterest` | Pinterest link (Leave empty to exclude)
+
+### Theme settings
+
+| Property name | Description  |
+------------ | -------------
+`highlight_color` | The main highlight/theme color of the site. You can put any color as a hex color. The configured color will be applied to sidebar, anchor links, buttons etc.
+`show_share_buttons` | Set as True/False to enable or disable Post share option.
+`show_author_info` | Set as True/False to enable or disable the author information on a post.
+`disqus_shortname` | Disqus Short name for Disqus comments. Leave empty to disable comments.
+`google_analytics_key` | Enter your Google analytics tracking ID to enable analytic support.
+`google_webmaster_key` | Enter your Google web-master verification key to verify your site with the web-master tool. (This is an alternative way of verifying your site with the web-master tool, the general way is to upload a file to your server.)
+
+
+### Page level configurations
+
+These configurations can be found within the top section of the each page, see the a post under `_posts` directory for example. 
+
+| Property name | Description  |
+------------ | -------------
+`banner_image` | Specify the image name eg: `sample-banner-image-1.jpg` for banner image for the post. Jekyll system tries to locate the image under `assets/images`. So make sure you place all banner images under assets/images.
+`banner_video` | If you want to embed `Youtube/Vimeo` Video or `SoundCloud` audio, Specify the resource within single quotes. Please have a look on example post in `_posts/2014-12-14-what-is-nodejs.md` to see how we embed YouTube video. 
+`comments` | Set as True/False, if false will disable comments for current page/post.
+`browser_title` | SEO property.  Use this property if you want to display different browser title other than default page title. Please have a look on example post under `_posts/2014-12-14-what-is-nodejs.md` to see how we used the property.
+`meta_description` | SEO property. Use this property If you want to have unique meta description for each post. See the example post on `_posts/2014-12-14-what-is-nodejs.md` to see how we used the property.
+
+### Sidebar navigation configurations
+
+As jekyll supports data files, **Gaya** theme uses `YAML` [data file][df] to load sidebar navigation items. You could find the `main-nav.yaml` data file under `_data/` directory. You could add any number of menu items by modifying `main-nav.yaml`. 
+
+An example of `main-nav.yaml`:
+
+```
+- title: "About me" # Title/Caption of the menu item
+  href: "/about" # the page where it pointed
+- title: "Blog Archive"
+  href: "/archive"
+```
+
+At some point you want to link an external URL, in that case you could edit the `_includes/sidebar.html` file. See the following example:
+
+```
+<nav class="sidebar-nav">
+   <a class="sidebar-nav-item" 
+      href="http://www.example.com"
+      target="_blank">
+      Example site
+    </a>
+</nav>
+```
+
+## License
+
+(The MIT License)
+
+Copyright (c) 2014 Gayan Virajith
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+[jekyll]: http://jekyllrb.com
+[df]: http://jekyllrb.com/docs/datafiles/
