@@ -7,10 +7,10 @@ highlight_color: '#3498db'
 social:
   github: swanson
   #bitbucket: philipj
-  hacker_news: swanson
+  #hacker_news: swanson
   #stackexchange: 348619
   #stackoverflow: 348619
-  twitter: _swanson
+  twitter: whoismilos
   #facebook: zuck
   #tumblr: animalygifs
   #linkedin: philipjagielski
@@ -20,7 +20,7 @@ social:
 
 # "Hi, I'm _______"
 name: Matt Swanson
-email: test@example.com
+email: whosimilos@gmail.com
 tagline: "weak opinions, strongly held"
 
 # Google Analytics key, leave blank to ignore
