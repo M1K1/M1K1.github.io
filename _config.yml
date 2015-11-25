@@ -1,61 +1,31 @@
-# Site settings
-title: Zen habits and life hacks
-tagline: And Tagline
-email: gayanvirajith@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hi, I’m a professional UI/UX designer and web developer. 
-  I love being minimal and creative.
-baseurl: "/gaya" # the subpath of your site, e.g. /blog/
-url: "http://gayan.me" # the base hostname & protocol for your site
-logourl: /assets/images/logo.png # Site logo
-author: "Tom Warlker"
-author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
-# Theme customization - please change from the defaults!
-theme:
-  # Color for sidebar bar, links, etc
-  highlight_color: "#205081" #205081" # "#272935"
-  # Social media links, leave blank to ignore
-  social: 
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +gayanvirajith
-    # dribble: gayanvirajith
-    pinterest: gayanvirajith
+name: Herring Cove
+author: Herring Cove
+baseurl: /herring-cove
+description: theme for jekyll
+github: http://www.github.com/arnp
+twitter: http://www.twitter.com/
+facebook: http://www.facebook.com
+linkedin: http://www.linkedin.com
+email: rnpatel[at]me.com
+location: 42°2'16"N   70°12'47"W
+disqus: diqus-username
 
-  # Enable share buttons on post footer
-  show_share_buttons: true
+##Make sure to edit the above fields, especially for disqus.
 
-  # Show author picure, name and social links on post footer
-  show_author_info: true
 
-  # Disqus comments manager - shortname
-  # disqus_shortname: gaya-webcreate
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
 
-  # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key: 
-  google_webmaster_key: 
-
-# Build settings
-markdown: kramdown
-
-# Permalinks
-permalink:        pretty
-
-# Pagination config
-paginate: 5
-
-# Files/Folders to be excluded from generated _site folder
-exclude: 
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
-  - .sass-cache
-  - Gemfile.lock
-
-# Sass conversion configs
-sass:
-  sass_dir: assets/css/_sass
-  style: :compressed
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
