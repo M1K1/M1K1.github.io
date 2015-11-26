@@ -28,6 +28,13 @@ author:
   name:              Mark Otto
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
+  
+  #PAGINATION
+
+    gems: [jekyll-paginate]
+    paginate: 5
+    paginate_path: "page:num"
+
 
 # Custom vars
 version:             2.0.0
