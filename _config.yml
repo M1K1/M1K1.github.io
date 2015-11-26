@@ -7,7 +7,7 @@ relative_permalinks: true
 # Setup
 title:               Poole
 tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+url:                 http://m1k1.github.io
 paginate:            1
 baseurl:             ""
 
@@ -25,14 +25,13 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Mickey
+  url:               https://twitter.com/whoismilos
+  email:             whoismilos@gmail.com
 
 # Custom vars
 version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
+
   
   
 
