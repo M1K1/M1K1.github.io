@@ -16,14 +16,14 @@ description: >
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://m1k1.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
-paginate: 5
+paginate: 3
 paginate_path: "/page:num/"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
@@ -68,8 +68,8 @@ descriptions:
 social:
   - name: Twitter
     icon: twitter
-    username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    username: whoismilos
+    url: https://twitter.com/whoismilos
     desc: Follow me on Twitter
     share: true
 
