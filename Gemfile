@@ -1,6 +1,6 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll", "~>2.5"
-gem "jekyll-archives", "~>2.0"
-gem "jekyll-sitemap", "~>0.8"
+gem 'jekyll'
+gem 'sass'
+gem 'octopress', '~> 3.0.0.rc.12'
+gem 'jekyll-sitemap'
