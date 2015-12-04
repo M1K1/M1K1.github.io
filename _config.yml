@@ -23,6 +23,9 @@ author:
   name:              Milos
   url:               https://twitter.com/whoismilos
   email:             contact@observemind.com
+  google:
+    plus: #username
+    analytics: UA-71041718-1
 
 # Custom vars
 version:             2.0.0
