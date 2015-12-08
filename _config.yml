@@ -1,33 +1,87 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+title:            Observe Mind
+description:      Life empowering blog
+disqus_shortname: neohpstrtheme
+reading_time:     true
+words_per_minute: 200
+logo:             images/logo.png
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+# url: http://aronbordin.com/neo-hpstr-jekyll-theme
+url: http://observemind.com
 
-# Setup
-title:               ObserveMind
-tagline:             Life empowering blog
-url:                 http://observemind.com
-paginate:            1
-baseurl:             ""
+menu:
+  - title: 'Home'
+    url: '/'
+  - title: 'About'
+    url: '/about'
+  - title: 'Categories'
+    url: '/categories'
+    type: 'categories'
+  
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
+# Owner/author information
+owner:
+  name:           Milos
+  site:           observemind.com
+  avatar:         images/avatar.jpg
+  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  email:          you@email.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter: observemind
+  facebook: observemind
+  github: 
+  linkedin:
+  instagram: men.milica
+  flickr:
+  tumblr:
+  # google plus id, include the '+', eg +AronBordin
+  google_plus:    +yourid
+
+social:
+  - title: "twitter"
+    url: "https://twitter.com/observemind"
+  - title: "facebook"
+    url: "https://facebook.com/observemind"
+  
+# Background image to be tiled on all pages
+background: poz1.png
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-71041718-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Belgrade
+future:      true
+highlighter: pygments
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
 sass:
-  sass_dir:          _sass
-  style:            :compressed
+  sass_dir: _sass
+  style: compressed
 
-# About/contact
-author:
-  name:              Milos
-  url:               https://twitter.com/whoismilos
-  email:             contact@observemind.com
-  google:
-    plus: #username
-    analytics: UA-71041718-1
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
 
-# Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
+# Amount of post to show on home page
+paginate: 3
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
